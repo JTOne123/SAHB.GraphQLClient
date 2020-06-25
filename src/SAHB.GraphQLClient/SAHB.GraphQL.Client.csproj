@@ -5,7 +5,15 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard1.2;netstandard2.0;net452</TargetFrameworks>
     <PackageReleaseNotes>Please see https://github.com/sahb1239/SAHB.GraphQLClient/releases for release notes</PackageReleaseNotes>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="System.Interactive.Async" Version="3.1.1" />
